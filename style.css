@@ -1,3 +1,29 @@
+@font-face {
+    font-family: '04b30';
+    src: url('assets/fonts/') format('woff2'),
+         url('assets/fonts/04b_30__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'vt323regular';
+    src: url('assets/fonts/') format('woff2'),
+         url('assets/fonts/vt323-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --white: hsl(360, 100%, 100%);
+    --silver-sand: hsl(204, 8%, 76%);
+    --bg-colour: hsla(0, 0%, 0%, 0.5);
+
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -8,33 +34,59 @@ body {
 
 .left-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     width: 40%;
     height: 100%;
-    background-image: url("assets/pixel-art-sunset.jpg");
+    background-image: url("assets/images/illuminated-night-cityscape.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    justify-content: space-evenly;
+    background-size: 100% 100%;
+    justify-content: center;
     align-items: center;
 }
 
-.left-container #logo {
-    justify-self: stretch;
+
+
+#banner {
+    margin: auto;
+    width: 100%;
+    font-family: "04b30", sans-serif;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--bg-colour);
 }
 
-.left-container #credits {
-    justify-self: flex-end;
-}
 
+
+#logo {
+    width: 100px;
+    height: auto;
     
+}
 
 
 
+#credits {
+    font-family: "vt323regular", sans-serif;
+    color: var(--white);
+    align-self: flex-end;
+    margin-right: 1%;
+    font-size: 11px;
+}
 
+#credits a:link {
+    color: var(--white);
+}
+
+#credits a:visited {
+    color: var(--silver-sand);
+}
 
 .right-container {
     padding-left: 20px;
     width: 60%;
     height: 100%;
+    font-family: "vt323regular", sans-serif;
 }
