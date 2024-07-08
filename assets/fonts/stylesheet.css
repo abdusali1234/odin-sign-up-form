@@ -3,9 +3,9 @@
 
 
 @font-face {
-    font-family: 'karma_futureregular';
-    src: url('karmafuture-webfont.woff2') format('woff2'),
-         url('karmafuture-webfont.woff') format('woff');
+    font-family: '04b30';
+    src: url('04b_30__-webfont.woff2') format('woff2'),
+         url('04b_30__-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,9 +15,9 @@
 
 
 @font-face {
-    font-family: 'gang_of_threeregular';
-    src: url('go3v2-webfont.woff2') format('woff2'),
-         url('go3v2-webfont.woff') format('woff');
+    font-family: 'vt323regular';
+    src: url('vt323-regular-webfont.woff2') format('woff2'),
+         url('vt323-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
