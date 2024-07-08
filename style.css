@@ -1,6 +1,6 @@
 @font-face {
     font-family: '04b30';
-    src: url('assets/fonts/') format('woff2'),
+    src: url('assets/fonts/04b_30__-webfont.woff2') format('woff2'),
          url('assets/fonts/04b_30__-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'vt323regular';
-    src: url('assets/fonts/') format('woff2'),
+    src: url('assets/fonts/vt323-regular-webfont.woff2') format('woff2'),
          url('assets/fonts/vt323-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -20,7 +20,10 @@
 :root {
     --white: hsl(360, 100%, 100%);
     --silver-sand: hsl(204, 8%, 76%);
-    --bg-colour: hsla(0, 0%, 0%, 0.5);
+    --bg-colour-banner: hsla(0, 0%, 0%, 0.5);
+    --black-pearl: hsl(236, 64%, 4%);
+    --surfie-green: hsl(185, 74%, 29%);
+    --light-blue: hsl(184, 87%, 45%);
 
 }
 
@@ -49,13 +52,17 @@ body {
 #banner {
     margin: auto;
     width: 100%;
-    font-family: "04b30", sans-serif;
-    font-size: 100px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white);
-    background-color: var(--bg-colour);
+    background-color: var(--bg-colour-banner);
+}
+
+#banner p {
+    font-family: "04b30", sans-serif;
+    font-size: 50px;
 }
 
 
@@ -63,6 +70,7 @@ body {
 #logo {
     width: 100px;
     height: auto;
+    padding: 50px;
     
 }
 
@@ -89,4 +97,85 @@ body {
     width: 60%;
     height: 100%;
     font-family: "vt323regular", sans-serif;
+    background-color: var(--black-pearl);
+    color: var(--white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.right-container p {
+    font-size: 1.75rem;
+}
+
+fieldset {
+    display: flex;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+
+legend {
+    margin-left: 0;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+label {
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+#details-card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--silver-sand);
+}
+
+input {
+    color: var(--white);
+    background-color: var(--black-pearl);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 100%;
+    padding: 0;
+}
+
+input:focus {
+    outline-width: 2px;
+    outline-color: var(--light-blue);
+    outline-style: solid;
+}
+
+input:focus {
+    outline-width: 2px;
+    outline-color: red;
+    outline-style: solid;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+button {
+    height: 50px;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "vt323regular", sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--surfie-green);
+    border-style: none;
+    border-radius: 0.5rem;
+}
+
+#log-in {
+    color: var(--surfie-green)
 }

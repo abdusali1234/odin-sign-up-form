@@ -12,21 +12,21 @@
     <div class="left-container">
         <div id="banner">
             <img id="logo" src="assets/images/odin-lined.png" alt="TOP logo">
-            <p>ODIN</p>
+            <p>ODIN GAMES</p>
         </div>
         <div id="credits">Photo by Obosis on <a href="https://backiee.com/wallpaper/illuminated-night-cityscape-minimalist-pixel-art/39331">backiee</a></div>
     </div>
 
     <div class="right-container">
-        <p>This isn't a real online service! You know you need something like this in you life to help you realise your deepest dreams.
+        <p>This is Odin Games (not a real online service)! Find the dankest games here.
             <br>Sign up <em>now</em> to get started.
         </p>
         <p>You <em>know</em> you want to.</p>
         <form action="#" method="get" id="sign-up-form">
-            <section id="details-card">
-                <h3>Let's do this!</h3>
+            <h2>Let's do this!</h2>
+            <div id="details-card">
                 <fieldset>
-                    <legend>Personal details</legend>
+                    <legend>PERSONAL DETAILS</legend>
                     <div class="details">
                         <ul>
                             <li>
@@ -55,17 +55,17 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Personal details</legend>
+                    <legend>CONTACT DETAILS</legend>
                     <div class="details">
                         <ul>
                             <li>
-                                <label for="first-name">
-                                    <span>FIRST NAME</span>
+                                <label for="email">
+                                    <span>EMAIL ADDRESS</span>
                                     <strong><span aria-label="required">*</span></strong>
                                 </label>
                             </li>
                             <li>
-                                <input type="text" id="first-name" name="first-name" placeholder="John" maxlength="32" pattern="[A-Za-z ]{1,32}" required>
+                                <input type="email" id="email" name="email-address" placeholder="example@mail.com" maxlength="64" required>
                             </li>
                         </ul>
                     </div>
@@ -83,7 +83,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Security</legend>
+                    <legend>SECURITY</legend>
                     <div class="details">
                         <ul>
                             <li>
@@ -111,10 +111,11 @@
                         </ul>
                     </div>
                 </fieldset>
-            </section>
+            </div>
         </form>
+
         <button type="submit" form="sign-up-form" value="Submit">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <p>Already have an account? <a id="log-in" href="#">Log in</a></p>
     </div>
 </body>
 
