@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+}
+
+#left-container {
+    width: 25%;
+    height: 100%;
+    background-image: url("assets/pixel-art-sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+
+
+main {
+    width: 75%;
+    height: 100%;
+}

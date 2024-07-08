@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <section id="left-container">
+    <div id="logo">Banner</div>
+    <div id="credits">Photo by Ali on <a href="">backiee</a></div>
+    </section>
+
+    <main>
+        <p>This isn't a real online service! You know you need something like this in you life to help you realise your deepest dreams.
+            <br>Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+
+        <form action="#" method="get" id="sign-up-form">
+            <section id="details-card">
+                <h3>Let's do this!</h3>
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <label for="first-name">
+                                    <span>FIRST NAME</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="text" id="first-name" name="first-name" placeholder="John" maxlength="32" pattern="[A-Za-z ]{1,32}" required>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <label for="last-name">
+                                    <span>LAST NAME</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="text" id="last-name" name="last-name" placeholder="Doe" maxlength="32" pattern="[A-Za-z ]{1,32}" required>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <label for="first-name">
+                                    <span>FIRST NAME</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="text" id="first-name" name="first-name" placeholder="John" maxlength="32" pattern="[A-Za-z ]{1,32}" required>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <label for="phone">
+                                    <span>PHONE NUMBER</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="tel" id="phone" name="phone">
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Security</legend>
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <label for="pwd">
+                                    <span>PASSWORD</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="password" id="pwd" name="pwd" required>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <label for="confirm-pwd">
+                                    <span>CONFIRM PASSWORD</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="password" id="confirm-pwd" name="confirm-pwd" required>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </section>
+        </form>
+        <button type="submit" form="sign-up-form" value="Submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </main>
+</body>
+
+<script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/js/utils.js",
+    });
+</script>
+
+</html>
